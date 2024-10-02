@@ -24,7 +24,7 @@ router.post('/forgot-password', async (req, res) => {
 
     // Send email with password reset link
     try {
-        await sendEmail(email, 'Password Reset', `Click this link to reset your password: http://localhost:3000/auth/reset-password?token=${token}`);
+        await sendEmail(email, 'Password Reset', `Click this link to reset your password: https://signup-login-backend-production.up.railway.app/auth/reset-password?token=${token}`);
         res.status(200).json({ message: 'Password reset link sent to email' });
     } catch (error) {
         res.status(500).json({ message: 'Failed to send email' });

@@ -11,7 +11,15 @@ const app = express();
 
 //connecting backend to frontend
 const cors = require('cors');
-app.use(cors());
+
+const corsOptions = {
+    origin: 'https://signup-login-frontend-murex.vercel.app/',
+    optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+
+
 
 
 
