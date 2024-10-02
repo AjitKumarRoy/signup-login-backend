@@ -196,7 +196,7 @@ router.post('/reset-password', async (req, res) => {
                 <body>
                     <h2>Password reset successful!</h2>
                     <p>Your password has been successfully updated. You can now log in with your new password.</p>
-                    <a href="/login">Go to Login</a>
+                    <a href="https://signup-login-frontend-murex.vercel.app/">Go to Login</a>
                 </body>
             </html>
         `);
